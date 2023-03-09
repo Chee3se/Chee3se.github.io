@@ -1,10 +1,37 @@
 .title {
     font-size: 100px;
-    font-family: cursive;
     text-align: center;
+    font-family: cursive;
     animation: colorRotate 6s linear 0s infinite;
 }
-  
+body {
+    margin:0;
+    font-family: cursive;
+}
+nav {
+    display: grid;
+    height: 50px;
+    justify-content: center;
+    background-color:rgb(255, 255, 162);
+    height: 100%;
+}
+@keyframes linkHover {
+    from {
+        color: yellow;
+      }
+      100% {
+        color: rgb(201, 201, 0);
+      }
+}
+.link {
+    margin: 5px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    background-color: yellow;
+    text-decoration: none;
+    color: rgb(153, 151, 41);
+}
   @keyframes colorRotate {
     from {
       color: #6666ff;
