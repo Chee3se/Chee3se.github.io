@@ -1,8 +1,16 @@
 .title {
     font-size: 100px;
     text-align: center;
-    font-family: cursive;
     animation: colorRotate 6s linear 0s infinite;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  font-weight: 200px;
+  text-align: center;
 }
 body {
     margin:0;
@@ -13,11 +21,16 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     height: 50px;
     justify-content: center;
-    background-color:rgb(255, 255, 162);
-    height: 100%;
+    background-color:white
 }
-.navdiv {
+.navFlex {
   height: 100%;
+  width: 100%;
+  display: flex;
+}
+.navTable {
+  height: 100%;
+  width: 100%;
   display: table;
 }
 .link {
@@ -30,22 +43,24 @@ nav {
     background-color: yellow;
     text-decoration: none;
     color: rgb(153, 151, 41);
+    transition: transform 0.5s ease;
 }
 .link:hover {
   animation: hoverBg 0.5s;
   background-color: rgb(228, 228, 0);
+  transform: translateY(10px);
 }
 .link:not(:hover) {
   animation: notHoverBg 0.5s;
   background-color: yellow;
 }
 @keyframes hoverBg {
-  from { background-color: yellow; }
-  to { background-color: rgb(228, 228, 0); }
+  from { background-color: yellow;}
+  to { background-color: rgb(228, 228, 0);}
 }
 @keyframes notHoverBg {
-  from { background-color: rgb(228, 228, 0); }
-  to { background-color: yellow; }
+  from { background-color: rgb(228, 228, 0);}
+  to { background-color: yellow;}
 }
   @keyframes colorRotate {
     from {
@@ -63,4 +78,8 @@ nav {
     100% {
       color: #6666ff;
     }
+  }
+  .imageCheeseHolder {
+    display: flex;
+    justify-content: center;
   }
