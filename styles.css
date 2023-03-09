@@ -1,5 +1,6 @@
 .title {
     font-size: 100px;
+    font-family: cursive;
     text-align: center;
     animation: colorRotate 6s linear 0s infinite;
 }
