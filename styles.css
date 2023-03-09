@@ -10,27 +10,42 @@ body {
 }
 nav {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     height: 50px;
     justify-content: center;
     background-color:rgb(255, 255, 162);
     height: 100%;
 }
-@keyframes linkHover {
-    from {
-        color: yellow;
-      }
-      100% {
-        color: rgb(201, 201, 0);
-      }
+.navdiv {
+  height: 100%;
+  display: table;
 }
 .link {
-    margin: 5px;
-    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    height: 50px;
     width: 300px;
     text-align: center;
     background-color: yellow;
     text-decoration: none;
     color: rgb(153, 151, 41);
+}
+.link:hover {
+  animation: hoverBg 0.5s;
+  background-color: rgb(228, 228, 0);
+}
+.link:not(:hover) {
+  animation: notHoverBg 0.5s;
+  background-color: yellow;
+}
+@keyframes hoverBg {
+  from { background-color: yellow; }
+  to { background-color: rgb(228, 228, 0); }
+}
+@keyframes notHoverBg {
+  from { background-color: rgb(228, 228, 0); }
+  to { background-color: yellow; }
 }
   @keyframes colorRotate {
     from {
