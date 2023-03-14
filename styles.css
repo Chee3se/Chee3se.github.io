@@ -1,7 +1,8 @@
+
 .title {
     font-size: 100px;
     text-align: center;
-    animation: colorRotate 6s linear 0s infinite;
+    animation: colorRotate 10s linear infinite;
 }
 h1 {
   font-size: 100px;
@@ -11,17 +12,26 @@ p {
   font-size: 20px;
   font-weight: 200px;
   text-align: center;
+  color: white;
 }
 body {
     margin:0;
     font-family: cursive;
+    background-image: url('Space.png');
+    background-size: cover;
+    animation: space 40s linear infinite;
+    background-position: initial;
+}
+@keyframes space {
+  from {background-position:initial;}
+  to {background-position: 100vw 0}
 }
 nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 50px;
     justify-content: center;
-    background-color:white
+    background-color:black
 }
 .navFlex {
   height: 100%;
@@ -83,3 +93,11 @@ nav {
     display: flex;
     justify-content: center;
   }
+.noteHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.note {
+  width: 1300px;
+}
