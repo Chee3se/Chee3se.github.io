@@ -1,8 +1,13 @@
 
-.title {
-    font-size: 100px;
+.rainbowTitle {
+    font-size: 200px;
     text-align: center;
     animation: colorRotate 10s linear infinite;
+}
+.title {
+  font-size: 100px;
+  text-align: center;
+  color: white;
 }
 h1 {
   font-size: 100px;
@@ -17,21 +22,21 @@ p {
 body {
     margin:0;
     font-family: cursive;
-    background-image: url('Space.png');
-    background-size: cover;
-    animation: space 40s linear infinite;
-    background-position: initial;
 }
 @keyframes space {
   from {background-position:initial;}
   to {background-position: 100vw 0}
 }
 nav {
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 50px;
     justify-content: center;
-    background-color:black
+    background-color:black;
+    position: fixed
+    
 }
 .navFlex {
   height: 100%;
@@ -89,15 +94,30 @@ nav {
       color: #6666ff;
     }
   }
-  .imageCheeseHolder {
+  .spaceHolder {
     display: flex;
+    align-items: center;
     justify-content: center;
+    vertical-align: middle;
+    height: 100vh;
+    background-image: url('Space.png');
+    background-size: cover;
+    animation: space 40s linear infinite;
+    background-position: initial;
   }
-.noteHolder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.note {
-  width: 1300px;
-}
+  .holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 100vh;
+  }
+  .Terminal {
+    width: 500px;
+    height: 1000px;
+    background-color: black;
+    border: solid rgb(34, 34, 34);
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
