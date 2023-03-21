@@ -55,27 +55,34 @@ nav {
     height: 50px;
     width: 300px;
     text-align: center;
-    background-color: yellow;
     text-decoration: none;
-    color: rgb(153, 151, 41);
+    color: rgb(0, 167, 214);
     transition: transform 0.5s ease;
 }
 .link:hover {
   animation: hoverBg 0.5s;
-  background-color: rgb(228, 228, 0);
+  background-color: rgb(0, 57, 67);
   transform: translateY(10px);
 }
 .link:not(:hover) {
   animation: notHoverBg 0.5s;
-  background-color: yellow;
+  background-color: rgb(0, 88, 103);
 }
 @keyframes hoverBg {
-  from { background-color: yellow;}
-  to { background-color: rgb(228, 228, 0);}
+  from { 
+    background-color: rgb(0, 88, 103);
+  }
+  to { 
+    background-color: rgb(0, 57, 67);
+  }
 }
-@keyframes notHoverBg {
-  from { background-color: rgb(228, 228, 0);}
-  to { background-color: yellow;}
+@keyframes cancelOnTwitterHoverBg {
+  from { 
+    background-color: rgb(0, 57, 67);
+  }
+  to { 
+    background-color: rgb(0, 88, 103);
+  }
 }
   @keyframes colorRotate {
     from {
@@ -113,12 +120,6 @@ nav {
     height: 100vh;
     background-image: url('morespace.jpg');
     background-size: cover;
-  }
-  .Terminal {
-    width: 500px;
-    height: 1000px;
-    background-color: black;
-    border: solid rgb(34, 34, 34);
   }
   body::-webkit-scrollbar {
     display: none;

@@ -1,0 +1,27 @@
+.Terminal {
+    width: 500px;
+    height: 1000px;
+    background-color: black;
+    border: solid rgb(34, 34, 34) 5px;
+
+  }
+#text {
+  min-height: 995px;
+  max-height: 995px;
+  min-width: 495px;
+  max-width: 495px;
+  font-size: 25px;
+  background-color: black;
+  color: rgb(0, 192, 0);
+  resize: none;
+  border: none;
+  animation: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+#text::-webkit-scrollbar {
+  display: none;
+}
+#prevText::-webkit-scrollbar {
+  display: none;
+}
