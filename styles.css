@@ -105,12 +105,14 @@ nav {
     animation: space 40s linear infinite;
     background-position: initial;
   }
-  .holder {
+  .holder1 {
     display: flex;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     height: 100vh;
+    background-image: url('morespace.jpg');
+    background-size: cover;
   }
   .Terminal {
     width: 500px;
