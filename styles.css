@@ -4,11 +4,6 @@
     text-align: center;
     animation: colorRotate 10s linear infinite;
 }
-.title {
-  font-size: 100px;
-  text-align: center;
-  color: white;
-}
 h1 {
   font-size: 100px;
   text-align: center;
@@ -116,11 +111,62 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     vertical-align: middle;
     height: 100vh;
-    background-image: url('morespace.jpg');
-    background-size: cover;
+    background-image: url("back.jpg");
+    background-size:cover;
   }
+  .title1 {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+  }
+  .subtitle1 {
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .holder2 {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    vertical-align: middle;
+    height: 100vh;
+    background-color: white;
+  }
+  .title2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    text-align: center;
+    color: black;
+  }
+  .button1 {
+    height: 3vh;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+  }
+  .button1:hover {
+    background-color: rgb(146, 34, 0);
+    transition: all 1s ease;
+    transform: scale(1.05);
+  }
+  .button1:not(:hover) {
+    background-color: gray;
+    transition: all 1s ease;
+    transform: scale(1);
+  }
+  .projects {
+    display: grid;
+  }
+  .project
   body::-webkit-scrollbar {
     display: none;
   }

@@ -1,46 +1,38 @@
 const text = document.getElementById("text");
 text.value = "Type ?help for commands\n";
-text.addEventListener("keydown", (event) => {
-  let info = text.value.split(/\n/);
-  if (event.key == "Enter") {
-    let input = info.pop(); // pēdēja linija
-    // Command
-    if (input.includes("?help")) {
-      // Response
-      let out = "Commands:\n" + "?info\n" + "?about\n";
-      let i = 0;
-      const intervalId = setInterval(() => {
-        text.value += out.charAt(i);
-        i++;
-        if (i >= out.length) {
-          clearInterval(intervalId);
-        }
-      }, 100);
-    } else if (input.includes("?info")) {
-      // Response
-      let out = "Name: Emīls\n" + "Surname: Pētersons\n" + "Occupation: full-stack developer\n";
-      let i = 0;
-      const intervalId = setInterval(() => {
-        text.value += out.charAt(i);
-        i++;
-        if (i >= out.length) {
-          clearInterval(intervalId);
-        }
-      }, 100);
-    } else if (input.includes("?about")) {
-      // Response
-      let out = "My name is Emīls Pētersons.\n" + "I'm a junior programmer.\n" + "And I love playing Rainbow Six Siege (add me on uplay Young_cheeser).\n";
-      let i = 0;
-      const intervalId = setInterval(() => {
-        text.value += out.charAt(i);
-        i++;
-        if (i >= out.length) {
-          clearInterval(intervalId);
-        }
-      }, 100);
-    }
-  }
-}, { once: false });
-
-
-
+fetch('../data/cmds.json')
+  .then(response => response.json())
+  .then(json => {
+    const commands = json;
+    // Code that uses the commands array goes here
+    text.addEventListener("keydown", (event) => {
+      let info = text.value.split(/\n/);
+      if (event.key == "Enter") {
+        let input = info.pop().trim();
+        // Command
+        commands.forEach(command => {
+          if (command.name == input) {
+            let out
+            if (Array.isArray(command.text)) {
+              out = command.text[Math.floor(Math.random() * command.text.length)]
+            } else {
+              out = command.text
+            }
+            let i = 0;
+            const intervalId = setInterval(() => {
+              text.value += out.charAt(i);
+              i++;
+              if (i >= out.length) {
+               clearInterval(intervalId);
+               if (input == "?banan") {
+                //STOP SNOOPING AROUND!!!
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                //STOP SNOOPING AROUND!!!
+              }
+             }
+           }, 100);
+          }
+        });
+      }
+    }, { once: false });
+  })

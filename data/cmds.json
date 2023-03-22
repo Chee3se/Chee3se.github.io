@@ -1,0 +1,27 @@
+[
+    {
+        "name":"?help",
+        "text":"Commands:\n?info\n?about\n?qotd\n?banan\n"
+    },
+    {
+        "name":"?about",
+        "text":"My name is Emīls Pētersons.\nI'm a junior programmer.\nAnd I love playing Rainbow Six Siege (add me on uplay Young_cheeser).\n"
+    },
+    {
+        "name":"?info",
+        "text":"Name: Emīls\nSurname: Pētersons\nOccupation: full-stack developer\n"
+    },
+    {
+        "name":"?banan",
+        "text":"Curiosity is the lust of the mind\n-Thomas Hobbes\n"
+    },
+    {
+        "name":"?qotd",
+        "text": [
+            "Life is a journey, and the best stories are the ones we make ourselves.\n",
+            "The greatest glory in living lies not in never falling, but in rising every time we fall.\n",
+            "In three words I can sum up everything I've learned about life: It goes on.\n",
+            "The world is a book, and those who do not travel read only one page.\n"
+        ]
+    }
+]
