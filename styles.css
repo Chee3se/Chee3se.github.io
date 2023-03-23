@@ -27,7 +27,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 5vh;
+    height: 50px;
     justify-content: center;
     background-color:black;
     position: fixed
@@ -46,7 +46,7 @@ nav {
 .link {
     display: table-cell;
     vertical-align: middle;
-    font-size: 50px;
+    font-size: 20px;
     height: 50px;
     width: 300px;
     text-align: center;
@@ -126,7 +126,7 @@ nav {
   }
   .subtitle1 {
     font-size: 3vh;
-    margin: 2vh;
+    margin: 5px;
     text-align: center;
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -147,7 +147,7 @@ nav {
   }
   .button1 {
     height: 3vh;
-    margin: 2vh;
+    margin: 20px;
     font-size: 2vh;
     color: white;
     background-color: gray;
