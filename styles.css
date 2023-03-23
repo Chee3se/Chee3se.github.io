@@ -46,7 +46,7 @@ nav {
 .link {
     display: table-cell;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 50px;
     height: 50px;
     width: 300px;
     text-align: center;
@@ -118,15 +118,15 @@ nav {
     background-size:cover;
   }
   .title1 {
-    font-size: 100px;
+    font-size: 10vh;
     text-align: center;
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 5px;
   }
   .subtitle1 {
-    font-size: 30px;
-    margin: 5px;
+    font-size: 3vh;
+    margin: 2vh;
     text-align: center;
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -147,8 +147,8 @@ nav {
   }
   .button1 {
     height: 3vh;
-    margin: 20px;
-    font-size: 20px;
+    margin: 2vh;
+    font-size: 2vh;
     color: white;
     background-color: gray;
     border-radius: 10px;
