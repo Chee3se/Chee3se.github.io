@@ -23,5 +23,11 @@
             "In three words I can sum up everything I've learned about life: It goes on.\n",
             "The world is a book, and those who do not travel read only one page.\n"
         ]
+    },
+    {
+        "name":"?test",
+        "text": [
+            "Works.\n"
+        ]
     }
 ]
