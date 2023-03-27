@@ -1,7 +1,6 @@
 const text = document.getElementById("text");
 text.value = "Type ?help for commands\n";
-fetch('https://raw.githubusercontent.com/Chee3se/Chee3se.github.io/main/data/cmds.json')
-//Vieglak lietot "../data/cmds.json", bet sis ir atraks ja veic izmainas
+fetch('../data/cmds.json')
   .then(response => response.json())
   .then(json => {
     const commands = json;
