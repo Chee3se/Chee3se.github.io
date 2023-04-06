@@ -4,6 +4,10 @@
         "text":"Commands:\n?info\n?about\n?qotd\n?banan\n"
     },
     {
+        "name":"?empty",
+        "text":"empty command\n"
+    },
+    {
         "name":"?about",
         "text":"My name is Emīls Pētersons.\nI'm a junior programmer.\nAnd I love playing Rainbow Six Siege (add me on uplay Young_cheeser).\n"
     },
