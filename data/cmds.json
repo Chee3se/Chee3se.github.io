@@ -1,7 +1,7 @@
 [
     {
         "name":"?help",
-        "text":"Commands:\n?info\n?about\n?qotd\n?banan\n"
+        "text":"Commands:\n?info\n?about\n?qotd\n?banan\n?projects\n"
     },
     {
         "name":"?empty",
@@ -18,6 +18,10 @@
     {
         "name":"?banan",
         "text":"Curiosity is the lust of the mind\n-Thomas Hobbes\n"
+    },
+    {
+        "name":"?projects",
+        "text":"Here are all of my projects type ?project and the id of the project you want to visit:\n 1. Grid of animals\n 2. Ceļojumu aģentūra\n 3. Transform un transition\n"
     },
     {
         "name":"?qotd",
