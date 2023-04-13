@@ -5,7 +5,7 @@ header {
     position: fixed;
     top:0;
     left:0;
-    background-color: red;
+    background-color: plum;
     width: 100vw;
     height: 50px;
     z-index: 10;
@@ -54,7 +54,7 @@ input {
     margin: 0px;
 }
 .close {
-    display: none;
+    opacity: 0;
 }
 input:hover {
     cursor: pointer;
@@ -62,17 +62,40 @@ input:hover {
 @media (max-width: 400px) {
     img {
         display: block;
+        transition: all 1s ease;
     }
-
+    nav {
+        position: relative;
+    }
     ul {
+        top: 49px;
         position: absolute;
+        background-color: plum;
+        margin: 0px;
+        width: 100vw;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        left: 100vw;
+        transition: all 1s ease;
     }
 
     input:checked ~ .menu{
-        display: none;
+        transform: scale(0.5) rotate(360deg);
+        transition-duration: 1s;
+        opacity: 0;
     }
 
     input:checked ~ .close{
-        display: block;
+        transform: scale(1) rotate(360deg);
+        transition-duration: 1s;
+        opacity: 1;
+    }
+
+    input:checked + nav > ul{
+        transform: translateX(-100vw);
+        transition-duration: 1s;
+        opacity: 0.9;
     }
 }
