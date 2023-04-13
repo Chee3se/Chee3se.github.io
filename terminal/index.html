@@ -11,22 +11,21 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div class="navTable">
-            <a class="link" href="/">Home</a>
-        </div>
-        <div class="navTable">
-            <a class="link" href="/terminal">Terminal</a>
-        </div>
-        <!--
-        <div class="navTable">
-            <a class="link" href="../cheese">Under construction</a>
-        </div>
-        <div class="navTable">
-            <a class="link" href="../cheese">Under construction</a>
-        </div>
-        -->
-    </nav>
+    <header>
+        <input type="checkbox"/>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/terminal">Terminal</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="../menu.svg" alt="Menu" class="icons menu" />
+        <img src="../close.svg" alt="Close" class="icons close" />
+    </header>
     <main>
         <div class="spaceHolder">
             <div class="Terminal" id="Terminal">
@@ -34,5 +33,6 @@
             </div>
         </div>
     </main>
+    <footer></footer>
 </body>
 </html>

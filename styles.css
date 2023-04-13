@@ -1,9 +1,46 @@
-
+/*Space/rainbow text*/
 .rainbowTitle {
     font-size: 200px;
     text-align: center;
     animation: colorRotate 10s linear infinite;
 }
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+@keyframes space {
+  from {background-position:initial;}
+  to {background-position: 100vw 0}
+}
+body {
+  margin:0;
+  font-family: cursive;
+}
+.spaceHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100vh;
+  background-image: url('Space.png');
+  background-size: cover;
+  animation: space 40s linear infinite;
+  background-position: initial;
+}
+/*Main page*/
 h1 {
   font-size: 100px;
   text-align: center;
@@ -14,55 +51,126 @@ p {
   text-align: center;
   color: white;
 }
-body {
-    margin:0;
-    font-family: cursive;
+.holder1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: middle;
+  height: 100vh;
+  background-image: url("back.jpg");
+  background-size:cover;
 }
-@keyframes space {
-  from {background-position:initial;}
-  to {background-position: 100vw 0}
+.title1 {
+  font-size: 4.5vw;
+  text-align: center;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+}
+.subtitle1 {
+  font-size: 1.3vw;
+  text-size-adjust: 80%;
+  margin: 5px;
+  text-align: center;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.holder2 {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100vh;
+  background-color: white;
+}
+.button1 {
+  height: 3vh;
+  margin: 20px;
+  font-size: 2vh;
+  color: white;
+  background-color: gray;
+  border-radius: 10px;
+}
+.button1:hover {
+  background-color: rgb(146, 34, 0);
+  transition: all 1s ease;
+  transform: scale(1.05);
+}
+.button1:not(:hover) {
+  background-color: gray;
+  transition: all 1s ease;
+  transform: scale(1);
+}
+
+
+/*Navigation bar*/
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+    z-index: 10;
+}
+.close {
+  opacity: 0;
+}
+.icons {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: -10;
+}
+input {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  opacity: 0;
+  right: 0;
+  z-index: -5;
+  margin: 0px;
 }
 nav {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 50px;
-    justify-content: center;
-    background-color:black;
-    position: fixed
-    
+    position: relative;
 }
-.navFlex {
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
   height: 100%;
   width: 100%;
   display: flex;
+  transition: transform 0.5s ease;
+  vertical-align: middle;
 }
-.navTable {
-  height: 100%;
-  width: 100%;
-  display: table;
-}
-.link {
-    display: table-cell;
+a {
     vertical-align: middle;
     font-size: 20px;
     height: 50px;
-    width: 300px;
+    width: 50vw;
     text-align: center;
     text-decoration: none;
     color: rgb(0, 167, 214);
-    transition: transform 0.5s ease;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.link:hover {
+li:hover {
   animation: hoverBg 0.5s;
   background-color: rgb(0, 57, 67);
   transform: translateY(10px);
 }
-.link:not(:hover) {
+li:not(:hover) {
   animation: notHoverBg 0.5s;
   background-color: rgb(0, 88, 103);
 }
+/*Keyframes*/
 @keyframes hoverBg {
   from { 
     background-color: rgb(0, 88, 103);
@@ -71,7 +179,7 @@ nav {
     background-color: rgb(0, 57, 67);
   }
 }
-@keyframes cancelOnTwitterHoverBg {
+@keyframes cancelHoverBg {
   from { 
     background-color: rgb(0, 57, 67);
   }
@@ -79,94 +187,60 @@ nav {
     background-color: rgb(0, 88, 103);
   }
 }
-  @keyframes colorRotate {
-    from {
-      color: #6666ff;
-    }
-    10% {
-      color: #0099ff;
-    }
-    50% {
-      color: #00ff00;
-    }
-    75% {
-      color: #ff3399;
-    }
-    100% {
-      color: #6666ff;
-    }
+/*Hamburger menu*/
+@media (max-width: 650px) {
+  a {
+    width: 100vw;
   }
-  .spaceHolder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    height: 100vh;
-    background-image: url('Space.png');
-    background-size: cover;
-    animation: space 40s linear infinite;
-    background-position: initial;
+  header {
+    background-color: rgb(0, 88, 103);
   }
-  .holder1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    vertical-align: middle;
-    height: 100vh;
-    background-image: url("back.jpg");
-    background-size:cover;
+  .icons {
+    display: block;
+    transition: all 1s ease;
   }
+  nav {
+      position: relative;
+  }
+  ul {
+      top: 49px;
+      position: absolute;
+      background-color: rgb(0, 88, 103);
+      margin: 0px;
+      width: 100vw;
+      height: 100px;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      left: 100vw;
+      transition: all 1s ease;
+  }
+
+  input:checked ~ .menu{
+      transform: scale(0.5) rotate(360deg);
+      transition-duration: 1s;
+      opacity: 0;
+  }
+
+  input:checked ~ .close{
+      transform: scale(1) rotate(360deg);
+      transition-duration: 1s;
+      opacity: 1;
+  }
+
+  input:checked + nav > ul{
+      transform: translateX(-100vw);
+      transition-duration: 1s;
+      opacity: 0.9;
+  }
+}
+/*Text adjustment
+ those sizes are bcus thats what the text size is at the current screen width*/
+@media (max-width: 1100px) {
   .title1 {
-    font-size: 10vh;
-    text-align: center;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5px;
+    font-size: 55px;
   }
   .subtitle1 {
-    font-size: 3vh;
-    margin: 5px;
-    text-align: center;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
   }
-  .holder2 {
-    display: flex;
-    align-items: top;
-    justify-content: center;
-    vertical-align: middle;
-    height: 100vh;
-    background-color: white;
-  }
-  .title2 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 100px;
-    text-align: center;
-    color: black;
-  }
-  .button1 {
-    height: 3vh;
-    margin: 20px;
-    font-size: 2vh;
-    color: white;
-    background-color: gray;
-    border-radius: 10px;
-  }
-  .button1:hover {
-    background-color: rgb(146, 34, 0);
-    transition: all 1s ease;
-    transform: scale(1.05);
-  }
-  .button1:not(:hover) {
-    background-color: gray;
-    transition: all 1s ease;
-    transform: scale(1);
-  }
-  .projects {
-    display: grid;
-  }
-  .project
-  body::-webkit-scrollbar {
-    display: none;
-  }
+}
