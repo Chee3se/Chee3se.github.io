@@ -32,13 +32,13 @@ fetch('../data/cmds.json')
              }
            }, 100);
           }
-          if (input == "?project1") {
+          if (input == "?p1") {
             window.open("../projects/animals.html",'_blank');
           }
-          if (input == "?project2") {
+          if (input == "?p2") {
             window.open("../projects/trip.html",'_blank');
           }
-          if (input == "?project3") {
+          if (input == "?p3") {
             window.open("../projects/transform.html",'_blank');
           }
         });
