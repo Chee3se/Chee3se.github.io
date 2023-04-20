@@ -109,7 +109,6 @@ footer {
   width: 100vw;
   background-color: rgb(0, 0, 51);
   grid-template-columns: repeat(3, 1fr);
-  overflow: ;
 }
 footer > p {
   font-size: 20px;
