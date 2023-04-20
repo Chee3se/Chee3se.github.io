@@ -83,6 +83,8 @@ p {
   vertical-align: middle;
   height: 100vh;
   background-color: white;
+  background-image: url("morespace.jpg");
+  background-size:cover;
 }
 .button1 {
   height: 3vh;
@@ -102,8 +104,17 @@ p {
   transition: all 1s ease;
   transform: scale(1);
 }
-
-
+footer {
+  display: grid;
+  width: 100vw;
+  background-color: rgb(0, 0, 51);
+  grid-template-columns: repeat(3, 1fr);
+  overflow: ;
+}
+footer > p {
+  font-size: 20px;
+  margin: 5px;
+}
 /*Navigation bar*/
 header {
     position: fixed;
@@ -243,4 +254,8 @@ li:not(:hover) {
   .subtitle1 {
     font-size: 22px;
   }
+}
+/* scrollbar */
+body::-webkit-scrollbar {
+  display: none;
 }
