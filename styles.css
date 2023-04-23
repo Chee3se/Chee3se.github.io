@@ -77,7 +77,9 @@ p {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .holder2 {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   align-items: top;
   justify-content: center;
   vertical-align: middle;
@@ -114,13 +116,8 @@ footer > p {
   font-size: 20px;
   margin: 5px;
 }
-.holder2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
- place-items: center;
-}
-
-.holder2>article {
+/* Projects */
+.holder2 article {
   display: grid;
   margin-top: 3vw;
   margin-left: 2rem;
@@ -132,23 +129,46 @@ footer > p {
   place-items: center;
 }
 
-.holder2>article>h2 {
+.holder2 h2 {
   color: white;
 }
 
-.holder2>article>p {
+.holder2 p {
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1vw;
 }
 
-.holder2>article>img {
+.holder2  img {
   margin-left: 1rem;
   margin-right: 1rem;
   width: 15vw;
   width: 15vw;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+/* Form */
+.holder3 {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  background-image: url("image11.png");
+  background-size:cover;
+  place-content: center;
+}
+.holder3 form {
+  display: flex;
+  background-color: black;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+  border: 1px solid white;
+  place-content: center;
+  grid-template-rows: repeat(2, 1fr);
+}
+.holder3 h3 {
+  color: white;
+  
 }
 /*Navigation bar*/
 header {
@@ -169,7 +189,7 @@ header {
   right: 0;
   z-index: -10;
 }
-input {
+header input {
   position: absolute;
   width: 48px;
   height: 48px;
@@ -262,19 +282,19 @@ li:not(:hover) {
       transition: all 1s ease;
   }
 
-  input:checked ~ .menu{
+  header input:checked ~ .menu{
       transform: scale(0.5) rotate(360deg);
       transition-duration: 1s;
       opacity: 0;
   }
 
-  input:checked ~ .close{
+  header input:checked ~ .close{
       transform: scale(1) rotate(360deg);
       transition-duration: 1s;
       opacity: 1;
   }
 
-  input:checked + nav > ul{
+  header input:checked + nav > ul{
       transform: translateX(-100vw);
       transition-duration: 1s;
       opacity: 0.9;
