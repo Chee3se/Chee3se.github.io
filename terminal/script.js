@@ -10,15 +10,34 @@ fetch('../data/cmds.json')
       let info = text.value.split(/\n/);
       if (event.key == "Enter") {
         let input = info.pop().trim();
-        // Command
+        //Function commands
+        //Simple commands
+        if (input == "?p1") {
+          window.open("../projects/animals.html",'_blank');
+        }
+        if (input == "?p2") {
+          window.open("../projects/trip.html",'_blank');
+        }
+        if (input == "?p3") {
+          window.open("../projects/transform.html",'_blank');
+        }
+        //More complex commands (extra variable)
+        const temp = input.split(" ");
+        if (temp[0] == "?delay") {
+          delay = temp[1];
+        }
+        //Text commands
         commands.forEach(command => {
-          if (command.name == input) {
+          if (command.name == temp[0]) {
             let out
             if (Array.isArray(command.text)) {
               out = command.text[Math.floor(Math.random() * command.text.length)]
+            } else if (temp[0] == "?delay") {
+              out = command.text + delay
             } else {
               out = command.text
             }
+            
             let i = 0;
             if (delay==0) {
               text.value += "\n" + out;
@@ -29,7 +48,8 @@ fetch('../data/cmds.json')
               if (i >= out.length) {
                 text.value += "\n";
                 clearInterval(intervalId);
-               if (input == "?banan") {
+                //Function and text commands
+               if (temp[0] == "?banan") {
                 //STOP SNOOPING AROUND!!!
                 window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                 //STOP SNOOPING AROUND!!!
@@ -37,21 +57,6 @@ fetch('../data/cmds.json')
              }
            }, delay);
           }
-          }
-          //Simple commands
-          if (input == "?p1") {
-            window.open("../projects/animals.html",'_blank');
-          }
-          if (input == "?p2") {
-            window.open("../projects/trip.html",'_blank');
-          }
-          if (input == "?p3") {
-            window.open("../projects/transform.html",'_blank');
-          }
-          //More complex commands (extra variable)
-          const temp = input.split(" ");
-          if (temp[0] == "?delay") {
-            delay = temp[1];
           }
         });
       }

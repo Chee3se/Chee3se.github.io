@@ -24,6 +24,10 @@
         "text":"Here are all of my projects type ?p and the id of the project (example: ?p1) you want to visit and if you want a detailed description of the project then just type \"d\" next to the same command for the project (example: ?p1d) here are all my projects:\n 1. Grid of animals\n 2. Ceļojumu aģentūra\n 3. Transform un transition"
     },
     {
+        "name":"?delay",
+        "text":"Delay set to: "
+    },
+    {
         "name":"?qotd",
         "text": [
             "Life is a journey, and the best stories are the ones we make ourselves.",
