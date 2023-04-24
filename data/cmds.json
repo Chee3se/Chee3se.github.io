@@ -1,47 +1,47 @@
 [
     {
         "name":"?help",
-        "text":"Commands:\n?info\n?about\n?qotd\n?banan\n?projects\n"
+        "text":"Commands:\n?info\n?about\n?qotd\n?banan\n?projects\n?delay (default: 100)"
     },
     {
         "name":"?empty",
-        "text":"empty command\n"
+        "text":"empty command"
     },
     {
         "name":"?about",
-        "text":"My name is Emīls Pētersons.\nI'm a junior programmer.\nAnd I love playing Rainbow Six Siege (add me on uplay Young_cheeser).\n"
+        "text":"My name is Emīls Pētersons.\nI'm a junior programmer.\nAnd I love playing Rainbow Six Siege (add me on uplay Young_cheeser)."
     },
     {
         "name":"?info",
-        "text":"Name: Emīls\nSurname: Pētersons\nOccupation: full-stack developer\n"
+        "text":"Name: Emīls\nSurname: Pētersons\nOccupation: full-stack developer"
     },
     {
         "name":"?banan",
-        "text":"Curiosity is the lust of the mind\n-Thomas Hobbes\n"
+        "text":"Curiosity is the lust of the mind\n-Thomas Hobbes"
     },
     {
         "name":"?projects",
-        "text":"Here are all of my projects type ?p and the id of the project (example: ?p1) you want to visit and if you want a detailed description of the project then just type \"d\" next to the same command for the project (example: ?p1d) here are all my projects:\n 1. Grid of animals\n 2. Ceļojumu aģentūra\n 3. Transform un transition\n"
+        "text":"Here are all of my projects type ?p and the id of the project (example: ?p1) you want to visit and if you want a detailed description of the project then just type \"d\" next to the same command for the project (example: ?p1d) here are all my projects:\n 1. Grid of animals\n 2. Ceļojumu aģentūra\n 3. Transform un transition"
     },
     {
         "name":"?qotd",
         "text": [
-            "Life is a journey, and the best stories are the ones we make ourselves.\n",
-            "The greatest glory in living lies not in never falling, but in rising every time we fall.\n",
-            "In three words I can sum up everything I've learned about life: It goes on.\n",
-            "The world is a book, and those who do not travel read only one page.\n"
+            "Life is a journey, and the best stories are the ones we make ourselves.",
+            "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+            "In three words I can sum up everything I've learned about life: It goes on.",
+            "The world is a book, and those who do not travel read only one page."
         ]
     },
     {
         "name":"?p1d",
-        "text":"No 12 savvaļas dzīvnieku attēliem kuri iegūti no Unsplash, es izveidoju dzīvnieku kolāžu izmantojot CSS Grid, lielākoties izmantojot īpašibas grid-column un grid-row.\n"
+        "text":"No 12 savvaļas dzīvnieku attēliem kuri iegūti no Unsplash, es izveidoju dzīvnieku kolāžu izmantojot CSS Grid, lielākoties izmantojot īpašibas grid-column un grid-row."
     },
     {
         "name":"?p2d",
-        "text":"Šeit man bija uzdevums pievienot header un footer, un novietot cenas uz attēliem. Beigu beigās tiku galā izmantojot īpāšību position: absolute un tā elementa vecākam position: relative, tādējādi tu vari elementu brīvi novietot kur vēlies!\n"
+        "text":"Šeit man bija uzdevums pievienot header un footer, un novietot cenas uz attēliem. Beigu beigās tiku galā izmantojot īpāšību position: absolute un tā elementa vecākam position: relative, tādējādi tu vari elementu brīvi novietot kur vēlies!"
     },
     {
         "name":"?p3d",
-        "text":"Šajā uzdevumā mērķis bija kustināt kvadrātu atbilstoši nosacījumiem, lietojot tikai CSS! To var panākt izmantojot transform īpašības, kā rotate, translate un transform-origin.\n"
+        "text":"Šajā uzdevumā mērķis bija kustināt kvadrātu atbilstoši nosacījumiem, lietojot tikai CSS! To var panākt izmantojot transform īpašības, kā rotate, translate un transform-origin."
     }
 ]

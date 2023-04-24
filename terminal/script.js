@@ -1,5 +1,6 @@
 const text = document.getElementById("text");
 text.value = "Type ?help for commands\n";
+let delay = 100;
 fetch('../data/cmds.json')
   .then(response => response.json())
   .then(json => {
@@ -19,19 +20,25 @@ fetch('../data/cmds.json')
               out = command.text
             }
             let i = 0;
+            if (delay==0) {
+              text.value += "\n" + out;
+            } else {
             const intervalId = setInterval(() => {
               text.value += out.charAt(i);
               i++;
               if (i >= out.length) {
-               clearInterval(intervalId);
+                text.value += "\n";
+                clearInterval(intervalId);
                if (input == "?banan") {
                 //STOP SNOOPING AROUND!!!
                 window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                 //STOP SNOOPING AROUND!!!
               }
              }
-           }, 100);
+           }, delay);
           }
+          }
+          //Simple commands
           if (input == "?p1") {
             window.open("../projects/animals.html",'_blank');
           }
@@ -40,6 +47,11 @@ fetch('../data/cmds.json')
           }
           if (input == "?p3") {
             window.open("../projects/transform.html",'_blank');
+          }
+          //More complex commands (extra variable)
+          const temp = input.split(" ");
+          if (temp[0] == "?delay") {
+            delay = temp[1];
           }
         });
       }
