@@ -157,18 +157,36 @@ footer > p {
   place-content: center;
 }
 .holder3 form {
-  display: flex;
+  display: grid;
   background-color: black;
   height: 50vh;
-  width: 50vw;
+  width: 35vw;
   border-radius: 10px;
   border: 1px solid white;
   place-content: center;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-columns: 1;
+  text-align: center;
+  
 }
 .holder3 h3 {
   color: white;
-  
+}
+.holder3 .title {
+  color: black;
+  height: 2vh;
+  border-radius: 10px;
+}
+.holder3 .text {
+  color: black;
+  height: 100%;
+  width: 30vw;
+  resize: none;
+  border-radius: 10px;
+}
+.holder3 button {
+  width: 10vw;
+  place-self: center;
 }
 /*Navigation bar*/
 header {
