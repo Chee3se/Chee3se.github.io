@@ -1,6 +1,6 @@
 /*Space/rainbow text*/
 .rainbowTitle {
-    font-size: 200px;
+    font-size: 50px;
     text-align: center;
     animation: colorRotate 10s linear infinite;
 }
@@ -169,25 +169,48 @@ footer > p {
   text-align: center;
   
 }
+.holder3 #out {
+  display: none;
+  grid-row: 3;
+}
 .holder3 h3 {
   color: white;
 }
-.holder3 .title {
+.holder3 #title {
   color: black;
   height: 2vh;
   width: 30vw;
   border-radius: 10px;
+  font-family:sans-serif;
+  font-size: 20px;
+  padding: 8px;
 }
-.holder3 .text {
+.holder3 #text {
   color: black;
   height: 100%;
   width: 30vw;
   resize: none;
   border-radius: 10px;
+  font-family:sans-serif;
+  font-size: 20px;
+  padding: 8px;
 }
 .holder3 button {
   width: 10vw;
   place-self: center;
+  font-family: cursive;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+.holder3 button:hover {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  transition-duration: 0.5s;
+}
+.holder3 button:not(:hover) {
+  background-color: rgb(201, 201, 201);
+  color: black;
+  transition-duration: 0.5s;
 }
 /*Navigation bar*/
 header {
@@ -237,7 +260,7 @@ a {
     vertical-align: middle;
     font-size: 20px;
     height: 50px;
-    width: 50vw;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     color: rgb(0, 167, 214);
@@ -292,7 +315,7 @@ li:not(:hover) {
       background-color: rgb(0, 88, 103);
       margin: 0px;
       width: 100vw;
-      height: 100px;
+      height: 150px;
       flex-direction: column;
       align-items: center;
       opacity: 0;

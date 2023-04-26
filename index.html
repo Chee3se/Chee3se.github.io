@@ -7,8 +7,7 @@
     <title>Hello!</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="cheese.png">
-    <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,6 +19,9 @@
                 </li>
                 <li>
                     <a href="/terminal">Terminal</a>
+                </li>
+                <li>
+                    <a href="/update">Whats new?</a>
                 </li>
             </ul>
         </nav>
@@ -50,11 +52,12 @@
             </article>
         </section>
         <section class="holder3">
-            <form action="https://getform.io/f/55fd404f-3f8d-42d3-844a-8e8334c68e88" method="POST">
-                <h3>Submit your questions!</h3>
-                <input class="title" type="text" name="title">
-                <textarea class="text" type="text" name="message"></textarea>
-                <button type="submit">Send</button>
+            <form id="inputform" method="post" onsubmit="form(event)">
+                <h3 id="out">Question submited!</h3>
+                <h3 id="in">Submit your questions!</h3>
+                <input id="title" type="text" name="title" required>
+                <textarea id="text" type="text" name="message" required></textarea>
+                <button id="button" type="submit">Send</button>
             </form>
         </section>
     </main>
