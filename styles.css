@@ -188,6 +188,7 @@ footer > p {
 .holder3 #text {
   color: black;
   width: 30vw;
+  height: 94%;
   resize: none;
   border-radius: 10px;
   font-family:sans-serif;
