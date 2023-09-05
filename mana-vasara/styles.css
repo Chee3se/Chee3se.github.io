@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: rgb(185, 255, 255);
+    text-align: center;
+}
+header > h1 {
+    margin: 0;
+}
