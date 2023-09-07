@@ -10,11 +10,14 @@ header {
     text-align: center;
 }
 header > h1 {
-    margin: 0;
+    margin: 0px;
     font-size: 100px;
 }
 main {
-    margin-left: 20px;
+    padding-left: 20px;
+    width: (max-content - 20px);
+    background-image: url(img/back.jpg);
+    background-size: cover;
 }
 main>div>h2 {
     text-align: center;
@@ -30,5 +33,45 @@ main>div {
 }
 main>ul>li {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 21px;
 }
+main>ul {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div>iframe {
+    padding: 20px;
+}
+img {
+    width: 200px;
+    border-radius: 70px;
+    margin-right: 300px;
+}
+
+.video {
+    background-color: black;
+    width: min-content;
+    height: min-content;
+    border-radius: 30px;
+}
+div {
+    max-width: 100%;
+}
+
+/* scrollbar */
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+    html{
+      scrollbar-width: none;
+    }
+  }
+  body {
+    margin: 0; /* remove default margin */
+    scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+    -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
+    overflow-y: scroll;
+  }
+  body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+  }
