@@ -4,6 +4,7 @@ html {
 }
 body {
     margin: 0px;
+    background-color: black;
 }
 header {
     background-color: rgb(252, 255, 74);
@@ -57,6 +58,10 @@ img {
 }
 div {
     max-width: 100%;
+}
+footer {
+    height: 230px;
+    bottom: 0px;
 }
 
 /* scrollbar */
